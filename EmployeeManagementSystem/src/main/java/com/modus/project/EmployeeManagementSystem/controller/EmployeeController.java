@@ -26,4 +26,8 @@ public class EmployeeController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
         }
     }
+    @GetMapping("/gm")
+    public String getHi(){
+        return "hello world...!!";
+    }
 }
